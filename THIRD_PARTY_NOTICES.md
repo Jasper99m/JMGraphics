@@ -1,6 +1,6 @@
 
 
-\# GLFW
+# GLFW
 
 Copyright © 2002-2006 Marcus Geelnard
 
@@ -34,7 +34,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 
 
-\# KHR
+# KHR
 
 Copyright (c) 2018 The Khronos Group
 
@@ -76,7 +76,7 @@ SOFTWARE.
 
 
 
-\# assimp
+# assimp
 
 Open Asset Import Library (assimp)
 
@@ -236,7 +236,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 
-\# DLG
+# DLG
 
 Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -286,7 +286,7 @@ DEALINGS IN THE SOFTWARE.
 
 
 
-\# freetype
+# freetype
 
 
 
@@ -632,7 +632,7 @@ Legal Terms
 
 
 
-\# glad
+# glad
 
 The glad source code:
 
@@ -762,7 +762,7 @@ The EGL Specification and various headers:
 
 
 
-\# GLM
+# GLM
 
 ================================================================================
 
@@ -874,7 +874,7 @@ THE SOFTWARE.
 
 
 
-\# stb
+# stb
 
 MIT License
 
