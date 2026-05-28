@@ -1,4 +1,5 @@
-
+# Third party licenses
+JMGraphics relies the following libraries:
 
 # GLFW
 
