@@ -124,7 +124,7 @@ void JMGraphics::forceResume() {
 	privPauseCondition.notify_all();
 }
 void JMGraphics::size(int x, int y) {
-	glfwSetWindowSize(window, x, y);
+	glfwSetWindowSize(window, (int)std::min(std::max(minWindowWidth, (float)x), maxWindowWidth), (int)std::min(std::max(minWindowHeight, (float)y), maxWindowHeight));
 	glFinish();
 	std::this_thread::sleep_for(std::chrono::milliseconds(20));
 	//glfwGetFramebufferSize(window, &Width, &Height);

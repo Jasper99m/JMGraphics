@@ -68,6 +68,12 @@ public:
 	///scales all the graphics including coordinates. if not set to 1.0, 1.0 will not correlate to one pixal. width(), height() and mouse coordinates will also be scaled, but windowWidth() and windowHeight() will not be.
 	float scaleFactor = 1.0f;
 
+	float minWindowHeight = 10.0f;
+	float maxWindowHeight = 8000.0f;
+
+	float minWindowWidth = 10.0f;
+	float maxWindowWidth = 8000.0f;
+
 	///stores all the characters that were typed in the last frame. Resets at the end of each frame.
 	std::string typedCharacters = "";
 
