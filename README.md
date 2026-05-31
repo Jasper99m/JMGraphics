@@ -21,11 +21,6 @@ Example of a minimal draw loop:
 Aditional glfwWindowHints may be passed before initialization if reqired.
 
 
-By default, 2D graphics can be rendered directly to the window or to a Buffer instance,
-while 3D graphics must be rendered to a Buffer3D instance.  Render to a buffer by calling the drawing functions
-between the buffers BeginDraw() and EndDraw() functions.  Buffer objects can then be displayed
-in the window using Image().
-
 To render a simple shape in your draw loop, first set fill and stroke colors as well as the stroke weight,
 then call a function to draw your desired shape
 ```
@@ -42,6 +37,11 @@ then call a function to draw your desired shape
 	//Draws a rectangle centered in the middle of the window with a width and height of 50 pixels
 	gr->rect(gr->width() / 2.0f, gr->height() / 2.0f, 50.0f, 50.0f);
 ```
+
+By default, 2D graphics can be rendered directly to the window or to a Buffer instance,
+while 3D graphics must be rendered to a Buffer3D instance.  Render to a buffer by calling the drawing functions
+between the buffers BeginDraw() and EndDraw() functions.  Buffer objects can then be displayed
+in the window using Image().
 
 # Setup
 A good way to include this library is to add this repo as a git submodule in your project.
