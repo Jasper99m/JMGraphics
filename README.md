@@ -1,6 +1,6 @@
 # JMGraphics
 
-A simple graphics engine that can be used to generate interactive 2D or 3D graphics.
+A simple graphics engine that can be used to generate interactive 2D and 3D graphics.
 
 Each instance of the JMGraphics class opens one window. Each frame must start by calling beginDraw()
 and end by calling endDraw().
@@ -71,3 +71,4 @@ if (MSVC)
 endif()
 ```
 
+More detailed docs:  https://jasper99m.github.io/JMGraphics/
