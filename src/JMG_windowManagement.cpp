@@ -123,20 +123,21 @@ void JMGraphics::forceResume() {
 	PauseNum = 0;
 	privPauseCondition.notify_all();
 }
-void JMGraphics::size(int x, int y) {
-	glfwSetWindowSize(window, (int)std::min(std::max(minWindowWidth, (float)x), maxWindowWidth), (int)std::min(std::max(minWindowHeight, (float)y), maxWindowHeight));
+bool JMGraphics::size(int x, int y) const{
+	if (x < minWindowWidth || x > maxWindowWidth || y < minWindowHeight || y > maxWindowHeight) {
+		return false;
+	}
+	glfwSetWindowSize(window, x, y);
 	glFinish();
-	std::this_thread::sleep_for(std::chrono::milliseconds(20));
-	//glfwGetFramebufferSize(window, &Width, &Height);
+	return true;
 }
-void JMGraphics::windowPosition(int x, int y) {
+void JMGraphics::windowPosition(int x, int y) const{
 	glfwSetWindowPos(window, x, y);
 }
-void JMGraphics::maximize() {
+void JMGraphics::maximize() const{
 	glfwMaximizeWindow(window);
-	//glfwGetFramebufferSize(window, &Width, &Height);
 }
-void JMGraphics::minimize() {
+void JMGraphics::minimize() const{
 	glfwIconifyWindow(window);
 }
 void JMGraphics::fullscreen() {
@@ -144,16 +145,15 @@ void JMGraphics::fullscreen() {
 }
 void JMGraphics::fullscreen(int monitor) {
 	if (monitor >= monitorCount) {
-		std::cout << "Monitor " << monitor << "does not exist. Can't set fullscreen window." << std::endl;
+		std::cout << "Monitor " << monitor << " does not exist. Can't set fullscreen window." << std::endl;
 		return;
 	}
 	fullscreen(monitors[monitor]);
-	//glfwGetFramebufferSize(window, &Width, &Height);
 }
-void JMGraphics::fullscreen(GLFWmonitor* monitor) {
+void JMGraphics::fullscreen(GLFWmonitor* monitor) const{
 	fullscreen(monitor, displayWidth(monitor), displayHeight(monitor));
 }
-void JMGraphics::fullscreen(GLFWmonitor* monitor, int width, int height) {
+void JMGraphics::fullscreen(GLFWmonitor* monitor, int width, int height) const{
 	glfwMakeContextCurrent(window);
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
@@ -165,7 +165,7 @@ void JMGraphics::fullscreen(GLFWmonitor* monitor, int width, int height) {
 	//glfwGetFramebufferSize(window, &Width, &Height);
 }
 
-void JMGraphics::isResizeable(bool resizable) {
+void JMGraphics::isResizeable(bool resizable) const{
 	if (resizable) {
 		glfwSetWindowAttrib(window, GLFW_RESIZABLE, GLFW_TRUE);
 	}

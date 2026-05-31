@@ -510,24 +510,24 @@ public:
 	void resume();
 	///Forces the thread to resume even if pause was called multiple times
 	void forceResume();
-	///sets the window size
-	void size(int x, int y);
+	///sets the window size. Returns true if successfull.
+	bool size(int x, int y) const;
 	///sets the window position on the display
-	void windowPosition(int x, int y);
+	void windowPosition(int x, int y) const;
 	///maximizes the window
-	void maximize();
+	void maximize() const;
 	///minimizes the window
-	void minimize();
+	void minimize() const;
 	///sets the window to fullscreen
 	void fullscreen();
 	///makes the window fullscreen on a specific monitor
 	void fullscreen(int monitor);
 	///makes the window fullscreen on a specific monitor
-	void fullscreen(GLFWmonitor* monitor);
+	void fullscreen(GLFWmonitor* monitor) const;
 	///makes the window fullscreen on a specific monitor with a specific resolution
-	void fullscreen(GLFWmonitor* monitor, int width, int height);
+	void fullscreen(GLFWmonitor* monitor, int width, int height) const;
 	///define if the user can resize the monitor
-	void isResizeable(bool resizable);
+	void isResizeable(bool resizable) const;
 	///applies an upper frame rate limit. set to zero for unlimited frame rate.
 	void limitFrameRate(int rate);
 	///Sets the window to close at the end of this draw loop.
