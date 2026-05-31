@@ -4,5 +4,5 @@ var searchData=
   ['invertcolor_1',['invertColor',['../class_j_m_graphics.html#a08b84675becb7e61cd1279911e0c6bd3',1,'JMGraphics']]],
   ['ispaused_2',['isPaused',['../class_j_m_graphics.html#a7982d6adaa4cf77a79011847ab30dc5c',1,'JMGraphics']]],
   ['isrendering_3',['isRendering',['../class_j_m_graphics.html#a1fd08b926552de04e05f80ab6b84ca2c',1,'JMGraphics']]],
-  ['isresizeable_4',['isResizeable',['../class_j_m_graphics.html#a3870c27f94299eda43061914bad917d7',1,'JMGraphics']]]
+  ['isresizeable_4',['isResizeable',['../class_j_m_graphics.html#abe6ff19b3c73659b14c0944fec887834',1,'JMGraphics']]]
 ];

@@ -5,5 +5,5 @@ var searchData=
   ['forceresume_2',['forceResume',['../class_j_m_graphics.html#a8b0a4f76c700ac22adba4c97ebfff205',1,'JMGraphics']]],
   ['framerate_3',['frameRate',['../class_j_m_graphics.html#ad1d3389bbf215e168a3596816d45bb9c',1,'JMGraphics']]],
   ['frametime_4',['frameTime',['../class_j_m_graphics.html#aa3bfc318080b6d6796bfd14f0fa64d97',1,'JMGraphics']]],
-  ['fullscreen_5',['fullscreen',['../class_j_m_graphics.html#a6517623013c3a7560cc207e215a659f7',1,'JMGraphics::fullscreen()'],['../class_j_m_graphics.html#a98f23a8398b7e92f17e2fe60dfb5c70d',1,'JMGraphics::fullscreen(int monitor)'],['../class_j_m_graphics.html#acc878ac251ef1c2830d5f5b637958927',1,'JMGraphics::fullscreen(GLFWmonitor *monitor)'],['../class_j_m_graphics.html#af8a6bb7549b2e0346e0d40ca288281b3',1,'JMGraphics::fullscreen(GLFWmonitor *monitor, int width, int height)']]]
+  ['fullscreen_5',['fullscreen',['../class_j_m_graphics.html#a6517623013c3a7560cc207e215a659f7',1,'JMGraphics::fullscreen()'],['../class_j_m_graphics.html#a98f23a8398b7e92f17e2fe60dfb5c70d',1,'JMGraphics::fullscreen(int monitor)'],['../class_j_m_graphics.html#a3758c86a6d5d3375997fc2330879435b',1,'JMGraphics::fullscreen(GLFWmonitor *monitor) const'],['../class_j_m_graphics.html#ac6a9e1a07f02045ef92a2c6c9276871c',1,'JMGraphics::fullscreen(GLFWmonitor *monitor, int width, int height) const']]]
 ];

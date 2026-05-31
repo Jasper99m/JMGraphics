@@ -7,7 +7,7 @@ var searchData=
   ['scrolly_4',['scrollY',['../class_j_m_graphics.html#a36295421b3c47daabdc65cb3eb399e05',1,'JMGraphics']]],
   ['setfont_5',['setFont',['../class_j_m_graphics.html#adc17cb034a6a800997fb1edabf1ee43c',1,'JMGraphics']]],
   ['shiftkeydown_6',['shiftKeyDown',['../class_j_m_graphics.html#ab85290da6b540d0909c7ed8b332535d2',1,'JMGraphics']]],
-  ['size_7',['size',['../class_j_m_graphics.html#a4d427d0dbb2f5c32f847b03aada2db67',1,'JMGraphics']]],
+  ['size_7',['size',['../class_j_m_graphics.html#a9c511e996aae575e9863289997c6a509',1,'JMGraphics']]],
   ['smoothdecrease_8',['smoothDecrease',['../class_j_m_graphics.html#ac3b9e392fa80678755b7db93be91e59e',1,'JMGraphics']]],
   ['smoothincrease_9',['smoothIncrease',['../class_j_m_graphics.html#a998aa69ee4efc61085fdd68fd8be4614',1,'JMGraphics']]],
   ['stroke_10',['stroke',['../class_j_m_graphics.html#ab16022c2c9c71834e1d0d4d2ff246c31',1,'JMGraphics::stroke(float r, float g, float b, float a)'],['../class_j_m_graphics.html#ae0f542f1e3b10496a905e20bafc8ebc0',1,'JMGraphics::stroke(glm::vec4 color)'],['../class_j_m_graphics.html#acf373b69f6df9659dae2541833bcad76',1,'JMGraphics::stroke(glm::vec3 color)'],['../class_j_m_graphics.html#a77e3db179bfaee299249a4cb3fb74374',1,'JMGraphics::stroke(float r, float g, float b)'],['../class_j_m_graphics.html#a2176ebb091972491125bb78016d203e0',1,'JMGraphics::stroke(float v)']]],

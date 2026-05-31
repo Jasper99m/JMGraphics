@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['maximize_0',['maximize',['../class_j_m_graphics.html#a6935782304cea345349a738aa8bc37cc',1,'JMGraphics']]],
-  ['minimize_1',['minimize',['../class_j_m_graphics.html#ad33981140b660f256e6fab317717a7ef',1,'JMGraphics']]],
+  ['maximize_0',['maximize',['../class_j_m_graphics.html#a39d8a6b87b9c76f8a2b820e15a95687a',1,'JMGraphics']]],
+  ['minimize_1',['minimize',['../class_j_m_graphics.html#a19dc7093d99c1ac7d30f28a196632419',1,'JMGraphics']]],
   ['monitornum_2',['monitorNum',['../class_j_m_graphics.html#ac07c14ff1b004815fe413811d90ee7f6',1,'JMGraphics']]],
   ['mouseclicked_3',['mouseClicked',['../class_j_m_graphics.html#a0b885ec28dc3d8ac75e82bdcdf4530ea',1,'JMGraphics']]],
   ['mouseclickedright_4',['mouseClickedRight',['../class_j_m_graphics.html#abcecc3dc7597c2381be21a3ffecb9ff4',1,'JMGraphics']]],
