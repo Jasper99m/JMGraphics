@@ -566,6 +566,8 @@ public:
 	static glm::vec4 lerpColor(glm::vec4 colorA, glm::vec4 colorB, float factor);
 	///returns a vector storing the rgba values of a color interpolated from colorA to colorB to colorC by the factor parameter. factor must be between 0.0f and 1.0f.
 	static glm::vec4 lerpColor(glm::vec4 colorA, glm::vec4 colorB, glm::vec4 colorC, float factor);
+	///returns a vector storing the rgba value of a color interpolated from the first to the last color in the std::vector by the factor parameter. Factor must be between 0.0f and 1.0f
+	static glm::vec4 lerpColor(std::vector<glm::vec4> colors, float factor);
 	///returns the inverse of the input color. Alpha will be the same as the input color.
 	static glm::vec4 invertColor(glm::vec4 color);
 	///Returns a string of a value without trailing zeros

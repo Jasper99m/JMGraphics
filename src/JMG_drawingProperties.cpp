@@ -56,22 +56,22 @@ glm::vec4 JMGraphics::lerpColor(glm::vec4 colorA, glm::vec4 colorB, float factor
 }
 
 glm::vec4 JMGraphics::lerpColor(glm::vec4 colorA, glm::vec4 colorB, glm::vec4 colorC, float factor) {
-	if (factor > 1.0f) {
-		factor = 1.0f;
-	}
-	else if (factor < 0.0f) {
-		factor = 0.0f;
-	}
 
-	glm::vec4 newC;
-	if (factor < 0.5f) {
-		newC = JMGraphics::lerpColor(colorA, colorB, factor * 2.0f);
-	}
-	else {
-		newC = JMGraphics::lerpColor(colorB, colorC, factor * 2.0f - 1.0f);
-	}
+	std::vector<glm::vec4> colors;
+	colors.push_back(colorA);
+	colors.push_back(colorB);
+	colors.push_back(colorC);
 
-	return newC;
+	return JMGraphics::lerpColor(colors, factor);
+}
+
+glm::vec4 JMGraphics::lerpColor(std::vector<glm::vec4> colors, float factor) {
+	factor = std::max(0.0f, std::min(factor, 1.0f));
+	if (colors.empty()) { return glm::vec4(0.0); }
+	
+	int A = std::min((int)colors.size() - 1, std::max((int)(factor * (float)colors.size()), 0));
+	int B = std::min((int)colors.size() - 1, std::max((int)(factor * (float)colors.size()) + 1, 0));
+	return JMGraphics::lerpColor(colors[A], colors[B], factor * (float)colors.size() - (float)A);
 }
 
 
